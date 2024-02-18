@@ -6,7 +6,7 @@ from materials.serializers import CourseSerializer, LessonSerializer
 
 class CourseViewSet(viewsets.ModelViewSet):
     serializer_class = CourseSerializer
-    queryset = Course.object.all()
+    queryset = Course.objects.all()
 
 
 class LessonCreateAPIView(generics.CreateAPIView):
@@ -15,19 +15,19 @@ class LessonCreateAPIView(generics.CreateAPIView):
 
 class LessonListAPIView(generics.ListAPIView):
     serializer_class = LessonSerializer
-    queryset = Lesson.object.all()
+    queryset = Lesson.objects.all()
 
 
 class LessonRetrieveAPIView(generics.RetrieveAPIView):
     serializer_class = LessonSerializer
-    queryset = Lesson.object.all()
+    queryset = Lesson.objects.all()
 
 
 class LessonUpdateAPIView(generics.UpdateAPIView):
     serializer_class = LessonSerializer
-    queryset = Lesson.object.all()
+    queryset = Lesson.objects.all()
 
 
 class LessonDestroyAPIView(generics.DestroyAPIView):
     serializer_class = LessonSerializer
-    queryset = Lesson.object.all()
+    queryset = Lesson.objects.all()
